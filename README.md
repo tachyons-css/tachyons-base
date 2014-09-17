@@ -8,6 +8,14 @@ npm install --save-dev tachyons-base
 ```
 or download the css on github and include in your project.
 
+## The Code
+```
+
+/* Base.css */
+
+html, body { height: 100%; }
+```
+
 ## Author
 
 [http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
