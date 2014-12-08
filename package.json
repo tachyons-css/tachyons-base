@@ -1,6 +1,6 @@
 {
   "name": "tachyons-base",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "style": "base.css",
   "homepage": "http://mrmrs.io/tachyons-base",
   "description": "Performance based sass module.",
