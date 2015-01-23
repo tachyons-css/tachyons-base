@@ -1,51 +1,29 @@
-// Gulp tasks for Tachyons
-
-// Load plugins
 var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    prefix = require('gulp-autoprefixer'),
-    minifyCSS = require('gulp-minify-css'),
-    sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    basswork = require('gulp-basswork'),
+    minifyCss = require('gulp-minify-css'),
+    transform = require('vinyl-transform'),
     size = require('gulp-size'),
-    rename = require('gulp-rename');
+    webserver = require('gulp-webserver');
 
-// Task that compiles scss files down to good old css
-gulp.task('pre-process', function(){
-  gulp.src('./background_size.scss')
-      .pipe(watch('./background_size.scss', function(files) {
-        return files.pipe(sass())
-          .pipe(size({gzip: false, showFiles: true, title:'un-prefixed css'}))
-          .pipe(size({gzip: true, showFiles: true, title:'un-prefixed gzipped css'}))
-          .pipe(prefix())
-          .pipe(size({gzip: false, showFiles: true, title:'prefixed css'}))
-          .pipe(size({gzip: true, showFiles: true, title:'prefixed css'}))
-          .pipe(gulp.dest('./'))
-          .pipe(minifyCSS())
-          .pipe(rename('background_size.min.css'))
-          .pipe(gulp.dest('./'))
-          .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
-          .pipe(size({gzip: true, showFiles: true, title:'minified css'}))
-      }));
-});
-
-// Minify all css files in the css directory
-// Run this in the root directory of the project with `gulp minify-css `
-gulp.task('minify-css', function(){
-  gulp.src('./background_size.css')
-    .pipe(minifyCSS())
-    .pipe(rename('background_size.min.css'))
+gulp.task('css', function() {
+  gulp.src('./src/tachyons-base.css')
+    .pipe(basswork())
+    .pipe(size({gzip: true, showFiles: true, title:'prefixed'}))
     .pipe(gulp.dest('./'))
-    .pipe(size({gzip: false, showFiles: true, title:'minified css'}))
-    .pipe(size({gzip: true, showFiles: true, title:'minified css'}));
+    .pipe(minifyCss())
+    .pipe(size({gzip: true, showFiles: true, title:'minified'}))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(gulp.dest('./'));
 });
 
-
-/*
-   DEFAULT TASK
-*/
-
-gulp.task('default', ['pre-process', 'minify-css'], function(){
-  gulp.start('pre-process');
-  gulp.watch('*.scss', ['pre-process']);
+gulp.task('serve', function() {
+  gulp.src('.')
+    .pipe(webserver({}));
 });
+
+gulp.task('default', ['css', 'serve'], function() {
+  gulp.watch(['./src/**/*'], ['css']);
+});
+
 
