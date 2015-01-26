@@ -1,6 +1,6 @@
 {
   "name": "tachyons-base",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "style": "tachyons-base.css",
   "homepage": "http://mrmrs.io/tachyons-base",
   "description": "Tachyons base css module",
