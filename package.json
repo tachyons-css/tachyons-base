@@ -2,7 +2,7 @@
   "name": "tachyons-base",
   "version": "1.0.0",
   "style": "tachyons-base.css",
-  "homepage": "http://mrmrs.io/tachyons-base",
+  "homepage": "http://github.com/mrmrs/tachyons-base",
   "description": "Tachyons base css module",
   "keywords": [
     "oocss",
