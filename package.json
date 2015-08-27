@@ -1,6 +1,6 @@
 {
   "name": "tachyons-base",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "style": "tachyons-base.css",
   "homepage": "http://github.com/mrmrs/tachyons-base",
   "description": "Tachyons base css module",
@@ -40,7 +40,6 @@
     "postcss-css-variables": "^0.4.0",
     "postcss-custom-media": "^4.1.0",
     "postcss-import": "^6.2.0"
-
   },
   "scripts": {
     "start": "node build.js"
