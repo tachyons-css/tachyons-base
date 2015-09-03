@@ -1,21 +1,33 @@
-# TACHYONS-BASE
+# tachyons-base
+1.2.0
 
-http://tachyons.io
-
-Work In Progress. Pull requests and open issues welcome.
+Tachyons base css module
 
 ## Install
 ```
 npm install --save-dev tachyons-base
 ```
-or download the css on github and include in your project.
+
+or download the css on github and include in your project:
+
+```
+git clone git@github.com:mrmrs/tachyons-base
+```
 
 ## The Code
 ```
+/*
 
-/* Base.css */
+  BASE
 
-html, body { height: 100%; }
+*/
+
+html, 
+body { 
+  height: 100%; 
+}
+
+
 ```
 
 ## Author
