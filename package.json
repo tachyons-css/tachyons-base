@@ -21,8 +21,8 @@
   "repository": "tachyons-css/tachyons-base",
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^0.6.1",
-    "watch": "^0.19.1"
+    "tachyons-cli": "^1.0.8",
+    "watch": "^1.0.1"
   },
   "scripts": {
     "start": "npm run build:watch",
