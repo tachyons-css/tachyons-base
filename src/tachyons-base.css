@@ -1,7 +1,5 @@
 /*
-
-  BASE
-
+  BASE EGGHEAD OVERRIDE
 */
 
 html,
@@ -9,3 +7,27 @@ body {
   height: 100%;
 }
 
+html {
+  box-sizing: border-box; /* border-box */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0; /* ma0 */
+  background: #1b1f24; /* navy */
+  color: #fff; /* white */
+  min-height: 100vh; /* min-vh-100 */
+}
+
+a {
+  color: #009dcf; /* blue */
+}
+
+code {
+  color: #42c2b3; /* turquoise */
+}
