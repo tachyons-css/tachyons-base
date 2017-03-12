@@ -4,7 +4,7 @@ Base CSS module for Tachyons
 
 #### Stats
 
-245 | 9 | 9
+339 | 9 | 10
 ---|---|---
 bytes | selectors | declarations
 
@@ -80,7 +80,7 @@ Running `$ npm start` will process the source css and place the built css in the
 html, body { height: 100%; }
 html { box-sizing: border-box; /* border-box */ }
 *, *:before, *:after { box-sizing: inherit; }
-body { margin: 0; /* ma0 */ background: #1b1f24; /* navy */ color: #fff; /* white */ min-height: 100vh; /* min-vh-100 */ }
+body { min-height: 100vh; /* min-vh-100 */ margin: 0; /* ma0 */ background: #1b1f24; /* navy */ color: #fff; /* white */ font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; /* sans-serif */ }
 a { color: #009dcf; /* blue */ }
 code { color: #42c2b3; /* turquoise */ }
 ```
