@@ -1,7 +1,7 @@
 {
   "name": "tachyons-base",
   "description": "Base CSS module for Tachyons",
-  "version": "1.2.6",
+  "version": "1.3.0",
   "author": {
     "name": "mrmrs",
     "email": "hi@mrmrs.cc",
