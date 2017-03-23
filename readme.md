@@ -1,10 +1,10 @@
-# tachyons-base 1.2.6
+# tachyons-base 1.3.0
 
 Base CSS module for Tachyons
 
 #### Stats
 
-339 | 9 | 10
+338 | 9 | 10
 ---|---|---
 bytes | selectors | declarations
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-base@1.2.6/css/tachyons-base.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-base@1.3.0/css/tachyons-base.min.css" />
 ```
 
 ##### Locally
@@ -81,8 +81,8 @@ html, body { height: 100%; }
 html { box-sizing: border-box; /* border-box */ }
 *, *:before, *:after { box-sizing: inherit; }
 body { min-height: 100vh; /* min-vh-100 */ margin: 0; /* ma0 */ background: #1b1f24; /* navy */ color: #fff; /* white */ font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; /* sans-serif */ }
-a { color: #009dcf; /* blue */ }
-code { color: #42c2b3; /* turquoise */ }
+a { color: #4786ff; /* blue */ }
+code { color: #59cd90; /* green */ }
 ```
 
 ## Contributing
