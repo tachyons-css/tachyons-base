@@ -19,8 +19,8 @@ html {
 body {
   min-height: 100vh; /* min-vh-100 */
   margin: 0; /* ma0 */
-  background: #1b1f24; /* navy */
-  color: #fff; /* white */
+  background: #232c3b; /* base */
+  color: #63768d; /* dark-gray */
   font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; /* sans-serif */
 }
 
