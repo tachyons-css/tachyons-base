@@ -1,7 +1,5 @@
 /*
-
-  BASE
-
+  BASE EGGHEAD OVERRIDE
 */
 
 html,
@@ -9,3 +7,38 @@ body {
   height: 100%;
 }
 
+html {
+  box-sizing: border-box; /* border-box */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh; /* min-vh-100 */
+  margin: 0; /* ma0 */
+  background: #232c3b; /* base */
+  color: #63768d; /* dark-gray */
+  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; /* sans-serif */
+}
+
+a {
+  color: #4786ff; /* blue */
+}
+
+code {
+  color: #59cd90; /* green */
+}
+
+
+/* Max-width */
+.eh-mw9 {
+  max-width: 76rem;
+}
+
+/* Transitions */
+.eh-transition {
+  transition: all 150ms ease-in-out;
+}
