@@ -1,2 +1,2 @@
-body,html{height:100%}
+body,html{height:100%}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{min-height:100vh;margin:0;background:#1b1f24;color:#fff;font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif}a{color:#4786ff}code{color:#59cd90}
 
